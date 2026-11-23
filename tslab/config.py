@@ -14,7 +14,8 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 OUTPUT_DIR = PROJECT_ROOT / "outputs"
 
-TARGET_TICKER = "GOOGL"
+TARGET_TICKER = "JPM"   # Group 202604-C5: JPMorgan Chase (see 01_data_features.ipynb)
+# TARGET_TICKER = "GOOGL"
 # TARGET_TICKER = "NVDA"
 
 # ---------------------------------------------------------------------------
