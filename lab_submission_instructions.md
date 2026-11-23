@@ -12,9 +12,9 @@
 
 | **Details**                                                                                        | **Comment** |
 |:---------------------------------------------------------------------------------------------------|:------------|
-| **Student ID:**                                                                                    |             |
-| **Name:**                                                                                          |             |
-| **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** |             |
+| **Student ID:**                                                                                    | 165916      |
+| **Name:**                                                                                          | Richard Junior Kituyi |
+| **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** | **Part:** I chose and justified the stock (JPM, JPMorgan Chase) and downloaded the data from Yahoo Finance on 23 November 2026. I ran the data quality report, plotted the candlestick chart, and ran the ADF and KPSS stationarity tests (notebook `01_data_features.ipynb`). I built the 50-feature set, including a new sector group based on the financials fund XLF, with every outside-market predictor shifted by one day. I ran the look-ahead check on every feature and saved the shared files `data/features_JPM.csv` and `data/feature_groups_JPM.json`. <br>**Branch:** [feature/data-features](https://github.com/BI-course/TmeSeriesForecastingandNeuralNetworks-c5/tree/feature/data-features) <br>**Learned:** why we model log returns rather than prices: the price is non-stationary and the return is stationary. I also learned that a predictor whose market closes later than the stock, such as gold, oil or the dollar, can leak future information even when the automatic look-ahead test passes, so I shifted those predictors by one day. |
 
 **Member 2**
 
