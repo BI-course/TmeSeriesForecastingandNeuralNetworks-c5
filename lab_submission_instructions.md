@@ -12,25 +12,25 @@
 
 | **Details**                                                                                        | **Comment** |
 |:---------------------------------------------------------------------------------------------------|:------------|
-| **Student ID:**                                                                                    |             |
-| **Name:**                                                                                          |             |
-| **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** |             |
+| **Student ID:**                                                                                    | 165916      |
+| **Name:**                                                                                          | Richard Junior Kituyi |
+| **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** | **Part:** I chose and justified the stock (JPM, JPMorgan Chase) and downloaded the data from Yahoo Finance on 23 November 2026. I ran the data quality report, plotted the candlestick chart, and ran the ADF and KPSS stationarity tests (notebook `01_data_features.ipynb`). I built the 50-feature set, including a new sector group based on the financials fund XLF, with every outside-market predictor shifted by one day. I ran the look-ahead check on every feature and saved the shared files `data/features_JPM.csv` and `data/feature_groups_JPM.json`. <br>**Branch:** [feature/data-features](https://github.com/BI-course/TmeSeriesForecastingandNeuralNetworks-c5/tree/feature/data-features) <br>**Learned:** why we model log returns rather than prices: the price is non-stationary and the return is stationary. I also learned that a predictor whose market closes later than the stock, such as gold, oil or the dollar, can leak future information even when the automatic look-ahead test passes, so I shifted those predictors by one day. |
 
 **Member 2**
 
 | **Details**                                                                                        | **Comment** |
 |:---------------------------------------------------------------------------------------------------|:------------|
-| **Student ID:**                                                                                    |             |
-| **Name:**                                                                                          |             |
-| **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** |             |
+| **Student ID:**                                                                                    | 158787            |
+| **Name:**                                                                                          | Macharia Justin Ngunjiri            |
+| **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** | Part: Built the shared evaluation harness (group_utils.py) with the walk-forward splits, naive forecast, metrics and Diebold-Mariano test, ran the naive forecast through the folds, built the master results table with the naive row first, and wrote the verdict for the client.<br>**Branch:** https://github.com/BI-course/TmeSeriesForecastingandNeuralNetworks-c5/tree/feature/evaluation.<br>**Learned:** why every model must be scored on the same test dates against the same naive forecast, and how the Diebold-Mariano p-value tells real forecasting skill apart from luck.           |
 
 **Member 3**
 
-| **Details**                                                                                        | **Comment** |
-|:---------------------------------------------------------------------------------------------------|:------------|
-| **Student ID:**                                                                                    |             |
-| **Name:**                                                                                          |             |
-| **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** |             |
+| **Details**                                                                                        | **Comment**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|:---------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Student ID:**                                                                                    | 	151311                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Name:**                                                                                          | Ndimanya Aklimali Arsene                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** | I trained and tuned Ridge and Gradient Boosting to forecast JPM’s next-day returns, exported both sets of predictions, and tested how removing each group of predictors affected Ridge. I learned how to tune models using only past data and why it matters to compare them with a simple baseline. Neither model beat the naïve forecast, and removing the other_markets group reduced Ridge’s forecast error by about 1.88%. My branch:https://github.com/BI-course/TmeSeriesForecastingandNeuralNetworks-c5/tree/feature/ml-models |
 
 **Member 4**
 
