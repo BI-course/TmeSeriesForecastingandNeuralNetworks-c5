@@ -20,9 +20,9 @@
 
 | **Details**                                                                                        | **Comment** |
 |:---------------------------------------------------------------------------------------------------|:------------|
-| **Student ID:**                                                                                    |             |
-| **Name:**                                                                                          |             |
-| **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** |             |
+| **Student ID:**                                                                                    | 158787            |
+| **Name:**                                                                                          | Macharia Justin Ngunjiri            |
+| **What part of the lab did you personally contribute to,** <br>**and what did you learn from it?** | Part: Built the shared evaluation harness (group_utils.py) with the walk-forward splits, naive forecast, metrics and Diebold-Mariano test, ran the naive forecast through the folds, built the master results table with the naive row first, and wrote the verdict for the client.<br>**Branch:** https://github.com/BI-course/TmeSeriesForecastingandNeuralNetworks-c5/tree/feature/evaluation.<br>**Learned:** why every model must be scored on the same test dates against the same naive forecast, and how the Diebold-Mariano p-value tells real forecasting skill apart from luck.           |
 
 **Member 3**
 
